@@ -17,9 +17,9 @@ def isAnagram(s, t):
     return True
 
 # Example usage:
-# s = "anagram"
-# t = "nagaram"
-# print(isAnagram(s, t))  # Output: True
+s = "anagram"
+t = "nagaram"
+print(isAnagram(s, t))  # Output: True
 
 s = "rat"
 t = "car"
