@@ -3,7 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="full-screen-container">
+      <div class="login-container">
+        <h1 class="login-title">Welcome</h1>
+        <form class="form" action="">
+          <div class="input-group success">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+            <span class="msg">Valid Email</span>
+          </div>
+          <div class="input-group error">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <span class="msg">Incorrect Password</span>
+          </div>
+          <button class="login-button" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
