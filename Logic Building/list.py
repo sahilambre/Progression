@@ -15,4 +15,15 @@ def swapList(newList):
 
 newList = [24, 35, 9, 56, 12]
 print(swapList(newList))
-    
+
+
+def swapList1(newList1):
+    # temp = newList[0]
+    # newList[0] = newList[-1]
+    # newList[-1] = temp
+    newList1[0], newList1[-1] = newList1[-1], newList1[0]
+
+    return newList1
+
+newList1 = [34,45,65,77,89,90]
+print(swapList1(newList1))
