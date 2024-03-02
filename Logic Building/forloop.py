@@ -48,3 +48,93 @@ def factorial(N):
     
 print(factorial(5))
 
+#TODO: Question: Count Digits: Write a program that counts the number of digits in a given integer N using a for loop.
+
+def countDigits(N):
+    if N >= 0 and N < 10:
+        return 1
+    else:
+        count = 0
+        while N != 0:
+            N = N // 10
+            count = count + 1
+        return count
+    
+print(countDigits(1234568))
+
+def countDigits1(N):
+    if N >= 0 and N < 10:
+        return 1
+    else:
+        count = 0
+        for element in str(N):
+            if element.isdigit():
+                count = count + 1
+        return count
+    
+print(countDigits1(123))
+
+#TODO: Question 6: Reverse an Array: Use a for loop to reverse the elements of an array.
+#! recheck - debug
+# def reverseArray(nums):
+#     newList = []
+#     for element in range(0, nums + 1, -1):
+#         newList.append(nums[element])
+
+#     return newList
+# print(reverseArray([1,2,3,4,5,6]))
+
+#TODO: Question 7: Find the Maximum: Implement a function that uses a for loop to find the maximum value in an array.
+
+def findMax(arr):
+    max = float('-inf')
+    for element in arr:
+        if element > max:
+            max = element
+    
+    return max
+
+print(float('-inf'))
+print(findMax([1,2,33,4,5,6]))
+
+#TODO: Question 8: Character Frequency: Write a program that uses a for loop to count the frequency of a specific character in a given string.
+
+def countFrequency(input_string, target_char):
+    counter = 0
+    for letter in input_string:
+        if letter == target_char:
+            counter += 1
+    
+    return counter 
+
+print(countFrequency('ssahil', 'z'))
+
+#TODO: Question 9: Multiplication Table: Use a for loop to print the multiplication table of a given number up to N.
+
+# def multiplyTable(number):
+#     for element in range(1, number + 1):
+#         total = 1
+#         multiplication = number * element
+#         total = multiplication
+#         print(number, " x ",element, " = ", total)
+#         total = 0
+
+def multiplyTable(number):
+    for element in range(1, number + 1):
+        total = number * element
+        print(number, " x ",element, " = ", total)
+print(multiplyTable(4))
+
+#TODO: Question 10: Sum of Array Elements: Write a function that calculates the sum of the elements in an integer array using a for loop.
+
+def arraySum(arr):
+    if len(arr) == 0:
+        return 0
+    else:
+        total = 0
+        for element in arr:
+            total += element
+        return total
+
+print(arraySum([1,2,3,4,5,6]))
+print(arraySum([]))
