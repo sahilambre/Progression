@@ -137,4 +137,4 @@ def arraySum(arr):
         return total
 
 print(arraySum([1,2,3,4,5,6]))
-print(arraySum([]))
+print(arraySum([1]))
